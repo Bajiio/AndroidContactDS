@@ -18,7 +18,7 @@ import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private var url="https://randomuser.me/api/?results=10"
+    private var url="https://randomuser.me/api/?results=10&nat=fr"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
