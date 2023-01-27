@@ -41,10 +41,7 @@ class MainAdapter(private var contactList: Array<Contact>, private val onClickFu
         holder.addressView.text = ItemsViewModel.location.street.number.toString() + ", " + ItemsViewModel.location.street.name
         holder.stateView.text = ItemsViewModel.location.state + ", " + ItemsViewModel.location.city+ ", " + ItemsViewModel.location.country
         holder.emailView.text = ItemsViewModel.email
-        if (ItemsViewModel.picture != null)
-        {
-            Picasso.get().load(ItemsViewModel.picture.medium).into(holder.imageView)
-        }
+        Picasso.get().load(ItemsViewModel.picture.medium).into(holder.imageView)
 
         holder.cardLinear.setOnClickListener{
             onClickFun(ItemsViewModel)
