@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity() {
             onSetContact(it)
         }
         addData()
+        binding.imageButton.setOnClickListener{
+            addData()
+        }
 
 
     }
@@ -63,4 +66,5 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("contact",contact)
         startActivity(intent)
     }
+
 }
